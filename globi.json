@@ -1,0 +1,113 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/csvw",
+    {
+      "@language": "en"
+    }
+  ],
+  "rdfs:comment": [
+    "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/"
+  ],
+  "tables": [
+    {
+      "url": "VirusReservoirs.csv",
+      "dcterms:bibliographicCitation": "Mollentze, Nardus, & Streicker, Daniel G. (2019). Viral zoonotic risk is homogenous among taxonomic orders of mammalian and avian reservoir hosts (Version 1.0.0) [Data set]. Zenodo. http://doi.org/10.5281/zenodo.3516613",
+      "delimiter": ",",
+      "interactionTypeId": "http://purl.obolibrary.org/obo/RO_0002454",
+      "interactionTypeName": "hasHost",
+      "headerRowCount": 1,
+      "null": [
+        "NA"
+      ],
+      "tableSchema": {
+        "columns": [
+          {
+            "name": "sourceTaxonName",
+            "titles": "UniversalName",
+            "datatype": "string"
+          },
+          {
+            "name": "SppName_ICTV_MSL2018b",
+            "titles": "SppName_ICTV_MSL2018b",
+            "datatype": "string"
+          },
+          {
+            "name": "targetTaxonName",
+            "titles": "Reservoir",
+            "datatype": "string"
+          },
+          {
+            "name": "Vector.borne",
+            "titles": "Vector.borne",
+            "datatype": "string"
+          },
+          {
+            "name": "Vector",
+            "titles": "Vector",
+            "datatype": "string"
+          },
+          {
+            "name": "referenceCitation",
+            "titles": "Reference_Reservoir",
+            "datatype": "string"
+          },
+          {
+            "name": "Reference_Vector",
+            "titles": "Reference_Vector",
+            "datatype": "string"
+          }
+        ]
+      }
+    },
+    {
+      "url": "VirusReservoirs.csv",
+      "dcterms:bibliographicCitation": "Mollentze, Nardus, & Streicker, Daniel G. (2019). Viral zoonotic risk is homogenous among taxonomic orders of mammalian and avian reservoir hosts (Version 1.0.0) [Data set]. Zenodo. http://doi.org/10.5281/zenodo.3516613",
+      "delimiter": ",",
+      "headerRowCount": 1,
+      "null": [
+        "NA"
+      ],
+      "interactionTypeId": "http://purl.obolibrary.org/obo/RO_0002460",
+      "interactionTypeName": "has vector",
+      "tableSchema": {
+        "columns": [
+          {
+            "name": "sourceTaxonName",
+            "titles": "UniversalName",
+            "datatype": "string"
+          },
+          {
+            "name": "SppName_ICTV_MSL2018b",
+            "titles": "SppName_ICTV_MSL2018b",
+            "datatype": "string"
+          },
+          {
+            "name": "Reservoir",
+            "titles": "Reservoir",
+            "datatype": "string"
+          },
+          {
+            "name": "Vector.borne",
+            "titles": "Vector.borne",
+            "datatype": "string"
+          },
+          {
+            "name": "targetTaxonName",
+            "titles": "Vector",
+            "datatype": "string"
+          },
+          {
+            "name": "Reference_Reservoir",
+            "titles": "Reference_Reservoir",
+            "datatype": "string"
+          },
+          {
+            "name": "referenceCitation",
+            "titles": "Reference_Vector",
+            "datatype": "string"
+          }
+        ]
+      }
+    }
+  ]
+}
